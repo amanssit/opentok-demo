@@ -1,10 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import {VideoRecepientComponent} from './video-recepient/video-recepient.component';
+import {VideoCallerComponent} from './video-caller/video-caller.component';
 
 const routes: Routes = [
   {
-    path: '',
-    children: []
+    path: 'seller',
+    component: VideoRecepientComponent
+  },
+  {
+    path: 'caller',
+    component: VideoCallerComponent
   }
 ];
 
